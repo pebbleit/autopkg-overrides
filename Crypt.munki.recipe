@@ -3,15 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>local.munki.SublimeText3</string>
+	<string>com.henrydobson.munki.Crypt</string>
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/%NAME%</string>
+		<string>apps/Crypt</string>
 		<key>NAME</key>
-		<string>SublimeText3</string>
-		<key>SPARKLE_FEED_URL</key>
-		<string>http://www.sublimetext.com/updates/3/stable/appcast_osx.xml</string>
+		<string>Crypt</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>
@@ -19,18 +17,14 @@
 				<string>testing</string>
 			</array>
 			<key>description</key>
-			<string>Sublime Text is an advanced text editor for OS X.</string>
-			<key>display_name</key>
-			<string>Sublime Text 3</string>
+			<string>Crypt is a Filevault 2 Escrow solution.</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>
 			<true/>
-            <key>category</key>
-            <string>Developer</string>
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>
-	<string>com.github.keeleysam.recipes.SublimeText.SublimeText3.munki</string>
+	<string>com.github.grahamgilbert.Crypt.munki</string>
 </dict>
 </plist>

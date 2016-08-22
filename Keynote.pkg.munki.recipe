@@ -3,34 +3,36 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>local.munki.SublimeText3</string>
+	<string>local.munki.pkg.Keynote</string>
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/%NAME%</string>
+		<string>apps/Apple</string>
 		<key>NAME</key>
-		<string>SublimeText3</string>
-		<key>SPARKLE_FEED_URL</key>
-		<string>http://www.sublimetext.com/updates/3/stable/appcast_osx.xml</string>
+		<string>Keynote</string>
+		<key>PATH</key>
+		<string>/Applications/%NAME%.app</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>
 			<array>
 				<string>testing</string>
 			</array>
-			<key>description</key>
-			<string>Sublime Text is an advanced text editor for OS X.</string>
 			<key>display_name</key>
-			<string>Sublime Text 3</string>
+			<string>%NAME%</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>
 			<true/>
-            <key>category</key>
-            <string>Developer</string>
+			<key>category</key>
+			<string>Apple</string>
+			<key>minimum_os_version</key>
+			<string>10.10.0</string>
 		</dict>
+		<key>mas_action</key>
+		<string>delete</string>
 	</dict>
 	<key>ParentRecipe</key>
-	<string>com.github.keeleysam.recipes.SublimeText.SublimeText3.munki</string>
+	<string>com.github.scriptingosx.pkg.keynote_</string>
 </dict>
 </plist>

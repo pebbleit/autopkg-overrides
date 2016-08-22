@@ -3,34 +3,38 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>local.munki.SublimeText3</string>
+	<string>local.munki.HipChat</string>
 	<key>Input</key>
 	<dict>
+		<key>DOWNLOAD_URL</key>
+		<string>https://www.hipchat.com/downloads/latest/mac</string>
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps/%NAME%</string>
 		<key>NAME</key>
-		<string>SublimeText3</string>
-		<key>SPARKLE_FEED_URL</key>
-		<string>http://www.sublimetext.com/updates/3/stable/appcast_osx.xml</string>
+		<string>HipChat</string>
 		<key>pkginfo</key>
 		<dict>
+			<key>blocking_applications</key>
+			<array>
+				<string>HipChat</string>
+			</array>
 			<key>catalogs</key>
 			<array>
 				<string>testing</string>
 			</array>
 			<key>description</key>
-			<string>Sublime Text is an advanced text editor for OS X.</string>
+			<string>HipChat is hosted group chat and IM for companies and teams. Supercharge real-time collaboration with persistent chat rooms, file sharing, and chat history.</string>
 			<key>display_name</key>
-			<string>Sublime Text 3</string>
+			<string>HipChat</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>
 			<true/>
-            <key>category</key>
-            <string>Developer</string>
+			<key>unattended_uninstall</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>
-	<string>com.github.keeleysam.recipes.SublimeText.SublimeText3.munki</string>
+	<string>com.github.derak.munki.HipChat</string>
 </dict>
 </plist>

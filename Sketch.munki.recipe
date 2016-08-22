@@ -3,34 +3,38 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>local.munki.SublimeText3</string>
+	<string>local.munki.Sketch</string>
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps/%NAME%</string>
 		<key>NAME</key>
-		<string>SublimeText3</string>
+		<string>Sketch</string>
 		<key>SPARKLE_FEED_URL</key>
-		<string>http://www.sublimetext.com/updates/3/stable/appcast_osx.xml</string>
+		<string>https://www.sketchapp.com/appcast3.xml</string>
+		<key>USER_AGENT</key>
+		<string>Sketch/3.3.2 Sparkle/e759c10</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>Productivity</string>
 			<key>description</key>
-			<string>Sublime Text is an advanced text editor for OS X.</string>
+			<string>Sketch gives you the power, flexibility and speed you always wanted in a lightweight and easy-to-use package. Finally you can focus on what you do best: Design.</string>
+			<key>developer</key>
+			<string>Bohemian Coding</string>
 			<key>display_name</key>
-			<string>Sublime Text 3</string>
+			<string>Sketch</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>
 			<true/>
-            <key>category</key>
-            <string>Developer</string>
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>
-	<string>com.github.keeleysam.recipes.SublimeText.SublimeText3.munki</string>
+	<string>com.github.foigus.munki.Sketch</string>
 </dict>
 </plist>
